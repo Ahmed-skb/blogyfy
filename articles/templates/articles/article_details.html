@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="main_title">Article Details</h1>
+    <div class="row justify-content-center">
+        <div class="thumb"><img src="{{ article.thumb.url }}" alt=""></div>
+        <div class="detail-content col-md-12">
+            <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+            <p>{{ article.body }}</p>
+            <p>{{ article.date }}</p>
+            <a href="{% url 'articles:list' %}">Article Archive</a>
+        </div>
+    </div>
+{% endblock %}

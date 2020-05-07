@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="main_title"><a href="{% url 'articles:list' %}">Article Archive</a></h1>
+<div class="row">
+    {% for article in articles %}
+    <div class="col-md-4">
+        <div class="content">
+        <h2 class="a_title"><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+        <p class="a_body">{{ article.body|truncatewords:30 }}</p>
+        <p class="date">{{ article.date }}</p>
+        <p class="author">{{ article.author }}</p>
+            </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

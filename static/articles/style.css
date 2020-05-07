@@ -1,0 +1,124 @@
+body {
+    background: #0f121f;
+    background-image: url(bg2.png), url('bg.png') !important;
+    background-attachment:fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color : #fff !important;
+}
+h1.main_title {
+   margin: 20px 0;
+    text-align: center;
+}
+.content {
+   background: none !important;
+    border: 1px solid #00dba0 !important;
+    position: relative;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 30px 0px 14px 0 ;
+    height: 230px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: #00dba0;
+}
+.a_title a {
+    color: #fff !important;
+    text-decoration: none;
+}
+.article {
+    background: none !important;
+}
+p.date {
+    font-size: 10px;
+    color: #ddd;
+}
+.author {
+    text-align:center;
+    width: 82px;
+    background: #00dba0;
+    padding: 2px;
+    position: absolute;
+    bottom: -16px;
+    right: 0px;
+    border-radius: 8px 0 12px 0px;
+}
+//article detail
+.thumb {
+    margin:0 auto;
+    padding: 20px 0;
+}
+.detail-content > p {
+    font-size: 25px;
+    padding: 30px 0;
+}
+.detail-content > h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+.detail-content {
+    text-align: center;
+    padding: 30px 0;
+}
+.detail-content > a {
+    border: 1px solid #00dba0;
+    border-radius: 5px 10px;
+    padding: 6px;
+    transition:.5s;
+}
+
+.detail-content > a:hover {
+    border-radius: 10px 5px;
+}
+form.site-form label{
+   display:block;
+}
+form.site-form input {
+    display: block;
+    background: none;
+    border: 1px solid #00dba0;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+}
+form.site-form textarea {
+    height: 100px;
+    background: none;
+    border: 1px solid #00dba0;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+}
+
+form.site-form input[type="submit"] {
+    background: none;
+    border: 1px solid #00dba0;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 5px 15px;
+    transition: .5s;
+}
+
+form.site-form input#id_thumb {
+    background: none;
+    border: 1px solid #00dba0;
+}
+
+form.site-form input[type="submit"]:hover {
+       border-radius: 15px 5px;
+       color: #00dba0;
+}
+form.site-form .helptext {
+    font-size: 12px;
+    color: #bbb;
+}
+ul.errorlist {
+    color: #da2f2f;
+    /* border-bottom: 1px solid #da2f2f; */
+}
