@@ -13,15 +13,15 @@
     <title>Blogyfy</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Blogyfy</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand logo" href="{% url 'articles:list' %}">Blogyfy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'articles:list' %}">Home <span class="sr-only">(current)</span></a>
       </li>
         {% if user.is_authenticated %}
       <li class="nav-item create-btn">

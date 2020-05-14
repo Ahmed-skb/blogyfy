@@ -10,6 +10,31 @@ h1.main_title {
    margin: 20px 0;
     text-align: center;
 }
+nav.nav-bg {
+    background: #0a122761;
+}
+a.logo {
+    transition: .5s ease-in;
+}
+a.logo:hover {
+   color: #00dba0 !important;
+   border-bottom: 1px solid;
+}
+li.create-btn > a {
+    border: 1px solid #00dba0;
+    border-radius: 5px 15px;
+    transition: .5s;
+}
+li.create-btn > a:hover {
+    border: 1px solid #fff;
+    border-radius: 15px 5px;
+}
+button.logout-btn {
+    color: #fff;
+}
+button.logout-btn:hover {
+    color: #00dba0;
+}
 .content {
    background: none !important;
     border: 1px solid #00dba0 !important;
